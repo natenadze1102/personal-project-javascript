@@ -60,10 +60,6 @@ class Transaction {
                   error: null,
                 });
               } catch (e) {
-                err.name = e.name;
-                err.message = e.message;
-                err.stack = e.stack;
-
                 this.logs.push({
                   index: scenario[i].index,
                   meta: scenario[i].meta,
